@@ -1,9 +1,22 @@
 import datetime
 from google.cloud import bigquery
 from weather_utils import fetch_weather, get_secret, logger, SYDNEY_COORDS, MELBOURNE_COORDS
+import pandas as pd
+import pytz
 
 def write_to_bigquery(table_name, record):
     try:
+        # Your timestamp in seconds (e.g. UTC)
+        unix_ts = record['date']
+
+        # Define Australian timezone (e.g., Sydney)
+        aus_tz = pytz.timezone('Australia/Sydney')  # or ZoneInfo('Australia/Sydney')
+
+        # Convert to datetime with timezone conversion
+        dt_aus = pd.to_datetime(unix_ts, unit='s', utc=True).tz_convert(aus_tz)
+
+        # Convert to date string for BigQuery (YYYY-MM-DD)
+        record['date'] = dt_aus.strftime('%Y-%m-%d')
         # Write to BigQuery
         client = bigquery.Client(project="deft-approach-459711-g2")
         table_id = f"deft-approach-459711-g2.sales_weather_analysis.{table_name}"
