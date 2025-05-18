@@ -23,7 +23,7 @@ if __name__ == "__main__":
     logger.info("Successfully retrieved API key")
 
     # Get the current date
-    current_date = datetime.date.today().strftime('%Y-%m-%d')
+    current_date = int(datetime.datetime.now().timestamp())
 
     # Set LAT, LON values for Sydney and Melbourne
     LAT_SYD, LON_SYD = SYDNEY_COORDS

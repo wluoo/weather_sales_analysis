@@ -16,7 +16,7 @@ update-weather:
 PROJECT_ID = deft-approach-459711-g2
 REGION = australia-southeast1
 REPOSITORY = weather-updates
-VERSION = v1.0.0
+VERSION = v1.0.2
 IMAGE = $(REGION)-docker.pkg.dev/$(PROJECT_ID)/$(REPOSITORY)/weather-update:$(VERSION)
 SA_NAME = weather-update-sa
 SA_EMAIL = $(SA_NAME)@$(PROJECT_ID).iam.gserviceaccount.com

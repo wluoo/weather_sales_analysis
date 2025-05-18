@@ -14,38 +14,37 @@
 
 | Product Category | Temperature | Humidity  | Wind Speed |
 | ---------------- | ----------- | --------- | ---------- |
-| Cold and Flu     | -0.039200   | 0.085389  | 0.053350   |
-| Hayfever         | 0.175852    | -0.041871 | -0.135276  |
-| Hair Care        | -0.336097   | 0.365266  | -0.179821  |
-| Cosmetics        | -0.190158   | 0.256476  | 0.009340   |
+| Cold and Flu     | -0.017184   | 0.055204  | -0.094826  |
+| Hayfever         | 0.123537    | -0.092868 | 0.086630   |
+| Hair Care        | -0.254682   | 0.301150  | -0.108640  |
+| Cosmetics        | -0.110918   | 0.209303  | -0.065083  |
 
 #### Season: Autumn
 
 | Product Category | Temperature | Humidity  | Wind Speed |
 | ---------------- | ----------- | --------- | ---------- |
-| Cold and Flu     | -0.300276   | 0.106923  | 0.081134   |
-| Hayfever         | 0.089934    | -0.009519 | 0.063393   |
-| Hair Care        | -0.210094   | -0.150605 | 0.102638   |
-| Cosmetics        | -0.456304   | 0.190040  | 0.054595   |
-
+| Cold and Flu     | -0.322971   | 0.166929  | 0.109741   |
+| Hayfever         | 0.103816    | -0.009444 | 0.104045   |
+| Hair Care        | -0.224930   | -0.044986 | 0.231045   |
+| Cosmetics        | -0.427746   | 0.223014  | 0.250944   |
 
 #### Season: Winter
 
 | Product Category | Temperature | Humidity  | Wind Speed |
 | ---------------- | ----------- | --------- | ---------- |
-| Cold and Flu     | -0.195528   | 0.045655  | 0.082522   |
-| Hayfever         | 0.074388    | -0.009160 | -0.026719  |
-| Hair Care        | -0.233578   | -0.068649 | 0.148058   |
-| Cosmetics        | -0.251431   | 0.037378  | -0.031015  |
+| Cold and Flu     | -0.175755   | 0.055498  | 0.121477   |
+| Hayfever         | 0.030186    | 0.056757  | -0.030300  |
+| Hair Care        | -0.216425   | -0.095032 | -0.018897  |
+| Cosmetics        | -0.293593   | 0.165340  | 0.081963   |
 
 #### Season: Spring
 
 | Product Category | Temperature | Humidity  | Wind Speed |
 | ---------------- | ----------- | --------- | ---------- |
-| Cold and Flu     | 0.063521    | 0.090257  | -0.049406  |
-| Hayfever         | -0.009032   | -0.158778 | -0.003439  |
-| Hair Care        | 0.041104    | -0.163437 | -0.031495  |
-| Cosmetics        | 0.160533    | 0.013524  | -0.130527  |
+| Cold and Flu     | 0.118805    | 0.121417  | -0.042001  |
+| Hayfever         | -0.050652   | -0.105227 | 0.044570   |
+| Hair Care        | -0.019799   | -0.002617 | -0.190022  |
+| Cosmetics        | 0.228933    | 0.069709  | -0.069956  |
 
 
 ### Sydney
@@ -54,40 +53,40 @@
 
 | Product Category | Temperature | Humidity  | Wind Speed |
 | ---------------- | ----------- | --------- | ---------- |
-| Cold and Flu     | -0.115557   | 0.027045  | -0.234749  |
-| Hayfever         | -0.079646   | 0.138087  | -0.068774  |
-| Hair Care        | 0.037579    | 0.011694  | -0.328330  |
-| Cosmetics        | 0.009683    | -0.017241 | -0.235325  |
+| Cold and Flu     | -0.100630   | -0.000355 | -0.165889  |
+| Hayfever         | -0.051660   | 0.117467  | -0.067575  |
+| Hair Care        | 0.123258    | 0.007074  | -0.236000  |
+| Cosmetics        | 0.096155    | -0.034411 | -0.259721  |
 
 
 ### Season: Autumn
 
 | Product Category | Temperature | Humidity  | Wind Speed |
 | ---------------- | ----------- | --------- | ---------- |
-| Cold and Flu     | -0.362500   | -0.106389 | -0.089776  |
-| Hayfever         | 0.165683    | -0.002831 | -0.059700  |
-| Hair Care        | -0.311374   | -0.106500 | 0.016532   |
-| Cosmetics        | -0.324595   | -0.232989 | 0.039146   |
+| Cold and Flu     | -0.427768   | 0.009132  | -0.075551  |
+| Hayfever         | 0.147855    | -0.017894 | -0.009876  |
+| Hair Care        | -0.424450   | 0.044381  | 0.077581   |
+| Cosmetics        | -0.420834   | -0.137068 | 0.183937   |
 
 
 #### Season: Winter
 
 | Product Category | Temperature | Humidity  | Wind Speed |
 | ---------------- | ----------- | --------- | ---------- |
-| Cold and Flu     | -0.180969   | -0.031988 | 0.093588   |
-| Hayfever         | 0.037253    | -0.009174 | 0.061944   |
-| Hair Care        | -0.092327   | 0.011907  | 0.034969   |
-| Cosmetics        | -0.178536   | 0.084529  | 0.190555   |
+| Cold and Flu     | -0.217438   | -0.024273 | 0.148838   |
+| Hayfever         | 0.131037    | -0.000950 | -0.036004  |
+| Hair Care        | -0.145061   | 0.013104  | 0.021535   |
+| Cosmetics        | -0.051653   | 0.006147  | 0.098868   |
 
 
 #### Season: Spring
 
 | Product Category | Temperature | Humidity  | Wind Speed |
 | ---------------- | ----------- | --------- | ---------- |
-| Cold and Flu     | -0.005760   | 0.106413  | -0.101602  |
-| Hayfever         | 0.076210    | -0.368129 | -0.263680  |
-| Hair Care        | -0.025953   | -0.353080 | -0.479380  |
-| Cosmetics        | -0.008764   | 0.193380  | -0.332808  |
+| Cold and Flu     | -0.005907   | 0.125050  | -0.046885  |
+| Hayfever         | -0.063298   | -0.320177 | -0.141975  |
+| Hair Care        | -0.094458   | -0.283150 | -0.287497  |
+| Cosmetics        | 0.031483    | 0.215109  | -0.106779  |
 
 ## Seasonal Insights on Product Sales
 
@@ -95,4 +94,4 @@
 
 2. There is a positive correlation between Hair Care product sales and humidity during Summer. This suggests that increased humidity may drive higher demand for hair care products, possibly due to higher probability of hair frizz or damage. This pattern is less pronounced or negative in other seasons, highlighting it is a seasonal effect.
 
-3. There is a consistent strong negative correlation with Cosmetics and temperature in autumn for both Melbourne and Sydney. This reflects that the lowering of temperature may drive higher cosmetic purchase to meet skincare needs, when it is drier and cooler. 
+3. There is a consistent strong negative correlation with Cosmetics and temperature in autumn and winter months for both Melbourne and Sydney. This reflects that the lowering of temperature may drive higher cosmetic purchase to meet skincare needs, when it is drier and cooler. This then turns into a positive correlation for Spring months, suggesting customers are buying more cosmetics as the weather warms up.

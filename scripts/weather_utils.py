@@ -5,44 +5,47 @@ from google.cloud import secretmanager
 
 def fetch_weather(date_obj, lat, lon, api_key, units='metric'):
     """
-    Fetch weather data for a specific date and location.
-    
+    Fetch weather data using Weather data for timestamp endpoint
     Args:
-        date_obj (str): Date in YYYY-MM-DD format
+        date_obj (int): Unix timestamp in UTC
         lat (float): Latitude
         lon (float): Longitude
         api_key (str): OpenWeatherMap API key
         units (str): Units of measurement (default: 'metric')
     
     Returns:
-        dict: Weather data including date, temperature, humidity, and wind speed
+        dict: Weather data including date, temperature, humidity, wind speed, and description
     """
-    url = f"https://api.openweathermap.org/data/3.0/onecall/day_summary"
+    url = f"https://api.openweathermap.org/data/3.0/onecall/timemachine"
     params = {
         'lat': lat,
         'lon': lon,
-        'date': date_obj,
+        'dt': date_obj,
         'appid': api_key,
         'units': units
     }
 
     response = requests.get(url, params=params)
     if response.status_code == 200:
-        logging.info(f"Successfully retrieved weather for {date_obj}")
+        logging.info(f"Successfully retrieved weather for timestamp {date_obj}")
         data = response.json()
+        weather_data = data['data'][0]  # Get the first (and only) data point
+        
         return {
             'date': date_obj,
-            'temperature': data.get('temperature').get('max'),
-            'humidity': data.get('humidity').get('afternoon'),
-            'wind_speed': data.get('wind').get('max').get('speed'),
+            'temperature': weather_data.get('temp'),
+            'humidity': weather_data.get('humidity'),
+            'wind_speed': weather_data.get('wind_speed'),
+            'description': weather_data.get('weather', [{}])[0].get('description')
         }
     else:
-        logging.error(f"Failed to fetch weather for {date_obj}: {response.status_code}")
+        logging.error(f"Failed to fetch weather for timestamp {date_obj}: {response.status_code}")
         return {
             'date': date_obj,
             'temperature': None,
             'humidity': None,
-            'wind_speed': None
+            'wind_speed': None,
+            'description': None
         }
 
 # Fetch API key securely from Secret Manager

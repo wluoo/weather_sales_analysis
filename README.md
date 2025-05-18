@@ -5,8 +5,8 @@
 ![Architecture Diagram](images/weather_sales_architecture.png)
 
 ### Weather Data Collection
-- Weather information is retrieved for each sales date by executing the [extract_historical_weather_data.py](scripts/extract_historical_weather_data.py), which calls the [OpenWeather Daily Aggregation API](https://openweathermap.org/api/one-call-3#history_daily_aggregation)
-- Data includes metrics such as temperature, humidity, and wind speed.
+- Weather information is retrieved for each sales date by executing the [extract_historical_weather_data.py](scripts/extract_historical_weather_data.py), which calls the [OpenWeather Weather data for timestamp API](https://openweathermap.org/api/one-call-3#:~:text=a%20local%20language.-,Weather%20data%20for%20timestamp,-To%20learn%20about)
+- Data includes metrics such as temperature, humidity, wind speed and description.
 - Separate CSV files are generated for Melbourne and Sydney to ensure location-specific granularity and easier downstream data partitioning.
 
 ### Storage in Google Cloud Storage (GCS)
@@ -27,7 +27,7 @@ Each file is mapped to a corresponding BigQuery table in the [sales_weather_anal
 
 ### Daily Updates of Weather Data
 
-The [update_weather.py](scripts/update_weather.py) script is responsible for fetching current-day weather data and inserting the retrieved data into the appropriate BigQuery weather table
+The [update_weather.py](scripts/update_weather.py) script is responsible for fetching current-day weather data at current timestamp and inserting the retrieved data into the appropriate BigQuery weather table
 
 For security purposes, API key is protected and not exposed within the code, it is stored in [Google Secret Manager](https://console.cloud.google.com/security/secret-manager/secret/openweather-api-key/versions?authuser=1&hl=en&inv=1&invt=AbxsJw&project=deft-approach-459711-g2) and provides audit logs to track when and whom accessed the secret
 
@@ -63,6 +63,7 @@ Attributes:
 - `temperature`
 - `humidity`
 - `wind_speed`
+- `description`
 
 This table stores daily aggregated weather data. Each row represents the weather for a single day.
 
